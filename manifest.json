@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube CC Sniffer",
+  "version": "1.0",
+  "description": "YouTube altyazı linkini otomatik yakalar ve çeker.",
+  "permissions": [
+    "scripting",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "*://www.youtube.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["injected.js"],
+      "matches": ["*://www.youtube.com/*"]
+    }
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://www.youtube.com/*"],
+      "js": ["injector.js"],
+      "run_at": "document_start"
+    }
+  ]
+}
