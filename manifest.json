@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "YouTube CC Sniffer",
-  "version": "1.0",
+  "version": "1.1",
   "description": "YouTube altyazı linkini otomatik yakalar ve çeker.",
   "permissions": [
     "scripting",
